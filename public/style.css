@@ -101,12 +101,15 @@ h1 span { color: #fff; }
 .project-info p { margin: 0; color: var(--muted); font-size: 12px; }
 code { font-family: monospace; font-size: .9em; }
 .table-wrap { margin-top: 57px; overflow-x: auto; }
-table { width: 100%; min-width: 700px; border-collapse: collapse; font-size: 13px; }
-th, td { padding: 20px 18px; border-top: 1px solid var(--line); text-align: left; vertical-align: top; }
-thead th { color: var(--muted); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
-tbody th { width: 24%; font-family: var(--display); font-size: 17px; letter-spacing: -.04em; }
-tbody td { color: var(--muted); }
-.table-index { display: inline-block; width: 33px; color: var(--purple); font-family: var(--body); font-size: 11px; }
+.education-table { width: 100%; border-collapse: collapse; font-size: 13px; table-layout: fixed; }
+.education-table th, .education-table td { padding: 20px 18px; border-top: 1px solid var(--line); text-align: left; vertical-align: top; }
+.education-table thead th { color: var(--muted); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+.education-table tbody th { width: 24%; font-family: var(--display); font-size: 17px; letter-spacing: -.04em; }
+.education-table tbody td { color: var(--muted); }
+.education-table th:first-child, .education-table td:first-child { width: 24%; }
+.education-table th:nth-child(2), .education-table td:nth-child(2) { width: 52%; }
+.education-table th:last-child, .education-table td:last-child { width: 24%; }
+.education-table .table-index { display: inline-block; width: 33px; color: var(--purple); font-family: var(--body); font-size: 11px; }
 .contact-section { display: grid; grid-template-columns: .95fr 1.05fr; gap: 110px; padding-bottom: 150px; }
 .contact-intro p:last-child { max-width: 280px; margin-top: 28px; color: var(--muted); font-size: 13px; }
 .contact-form { display: grid; grid-template-columns: 1fr 1fr; gap: 11px 18px; align-content: start; }
@@ -161,6 +164,9 @@ tbody td { color: var(--muted); }
     .project-grid { grid-template-columns: 1fr; margin-top: 40px; }
     .project-card:last-child { grid-column: auto; max-width: none; }
     .project-media { min-height: 250px; }
+    .education-table th, .education-table td { padding: 16px 10px; }
+    .education-table tbody th { font-size: 15px; }
+    .education-table .table-index { width: 27px; }
     .contact-section { gap: 38px; padding-bottom: 95px; }
     .contact-form { grid-template-columns: 1fr; }
     .contact-form label[for="message"], .contact-form textarea, .contact-form button { grid-column: auto; }
